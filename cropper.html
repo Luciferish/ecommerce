@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Normalize CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<!-- Cropper CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css'>
+<!-- Cropper JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js'></script>
+
+<link rel="stylesheet" href="style2.css">
+
+<main class="page">
+	<h2>Upload ,Crop and save.</h2>
+	<!-- input file -->
+	<div class="box">
+		<input type="file" id="file-input">
+	</div>
+	<!-- leftbox -->
+	<div class="box-2">
+		<div class="result"></div>
+	</div>
+	<!--rightbox-->
+    <div class="box-2 img-result hide">
+		<!-- result of crop -->
+		<img src="download.png">
+        <img class="cropped" src="" alt="">
+	</div>
+	<!-- input file -->
+	<div class="box">
+		<div class="options hide">
+			<label> Width</label>
+			<input type="number" class="img-w" value="300" min="100" max="1200" />
+		</div>
+		<!-- save btn -->
+	<button class="btn save hide">Preview</button>
+		<!-- download btn -->
+	<a href="" class="btn download hide">Download</a>
+	</div>
+ </main>
+
+ 
+
+ <!-- Image Cropper JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js'></script>
+<script  src="./js/script.js"></script>
+
+</html>
